@@ -68,6 +68,8 @@ fun main() = runBlocking {
     val secondResult = lendingService.borrow(books[0], member.name)
     printBorrowResult(secondResult)
 
+
+
     println("\nAvailable after borrowing:")
     for (book in library.availableBooks()) {
         println(book.title)
